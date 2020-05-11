@@ -3,7 +3,13 @@
 	"displayName": "Jump Tag",
 	"description": "Navigate through your XML/HTML code faster",
 	"author": "Yurii Semeniuk",
+	"icon": "img/logo.png",
 	"version": "0.0.1",
+	"publisher": "ysemeniuk",
+	"repository": {
+	  "type": "git",
+	  "url": "https://github.com/NordicSoft/vscode-jump-tag.git"
+	}, 
 	"engines": {
 		"vscode": "^1.44.0"
 	},
