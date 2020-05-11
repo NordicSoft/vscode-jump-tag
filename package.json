@@ -11,17 +11,28 @@
 		"Other"
 	],
 	"activationEvents": [
+		"onCommand:jumpTag.prev",
 		"onCommand:jumpTag.next"
 	],
 	"main": "./extension.js",
 	"contributes": {
 	  "commands": [
 		{
+		  "command": "jumpTag.prev",
+		  "title": "Jump Tag - Previous"
+		},
+		{
 		  "command": "jumpTag.next",
 		  "title": "Jump Tag - Next"
 		}
 	  ],
 	  "keybindings": [
+		{
+		  "mac": "cmd+alt+left",
+		  "key": "ctrl+alt+left",
+		  "command": "jumpTag.prev",
+		  "when": "editorTextFocus"
+		},
 		{
 		  "mac": "cmd+alt+right",
 		  "key": "ctrl+alt+right",
